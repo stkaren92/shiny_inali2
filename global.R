@@ -7,7 +7,7 @@ library(readxl)
 #setwd("~/Dropbox//Github/Shiny_INALI/")
 dir()
 #TableP <- read.csv("INALI.csv", head = T, sep = ",")
-TableP <- read_excel("INALI.xlsx", sheet = "INALI", col_names = T)
+TableP <- read_excel("data/INALI.xlsx", sheet = "INALI", col_names = T)
 
 TableP <- TableP %>%
   select(Pais, Estado, Nombre, Lengua) %>%
@@ -100,7 +100,7 @@ mx.states1 <- rbind(mx.states, TableP1)
 
 
 dir()
-World1 <- read.csv("MaizeWorld.csv", head = T, sep = ",")
+World1 <- read.csv("data/MaizeWorld.csv", head = T, sep = ",")
 
 #World1 <- read_excel("INALI.xlsx", sheet = "MaizWorld", col_names = T)
 
