@@ -1,11 +1,11 @@
-library(tidyverse)
-library(readxl)
-library(reshape)
+library(ggplot2)
 library(googleVis)
 library(RColorBrewer)
+library(readxl)
+library(reshape)
 library(shiny)
-library(ggplot2)
 library(shinythemes)
+library(tidyverse)
 
 TableP <- read_excel("data/INALI.xlsx", sheet = "INALI", col_names = T)
 
