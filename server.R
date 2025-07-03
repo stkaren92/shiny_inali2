@@ -1,13 +1,3 @@
-library(tidyverse)
-library(shiny)
-#library(dplyr)
-#library(reshape)
-#library(vegan)
-library(ggplot2)
-library(googleVis)
-#library(mxmaps)
-library(RColorBrewer)
-
 shinyServer(function(input, output, session) {
   
   
@@ -31,16 +21,12 @@ shinyServer(function(input, output, session) {
     return(Treeplot11)
     
   })
-  
-
  
   Bread <- reactive({
     input$update
     TableL1 <- TTabla[,input$Especies]    
   })
  
-
-  
   
   output$Treeplot2 <- renderGvis({
     Feynmann2 <- Bread()
@@ -66,8 +52,4 @@ shinyServer(function(input, output, session) {
     return(TreePlot22)
     
   })
-  
-  
-  
-    
   })
