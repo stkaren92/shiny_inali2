@@ -2,7 +2,7 @@ shinyUI(navbarPage(
   theme = shinytheme("flatly"),
   title = "",
 
-    tabPanel('Local leanguage', 
+    tabPanel('Local language', 
            # Define UI for slider demo application
            shinyUI(fluidPage(
              #Application title
@@ -13,7 +13,7 @@ shinyUI(navbarPage(
                     )),
 
 #Ventana 2.1 Sankeyplot
-tabPanel('International leanguage', 
+tabPanel('International language', 
          # Define UI for slider demo application
          shinyUI(fluidPage(
            #Application title
